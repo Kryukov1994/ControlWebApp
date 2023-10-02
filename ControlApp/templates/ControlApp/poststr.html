@@ -1,0 +1,16 @@
+{% extends "ControlApp\base.html" %}
+
+
+
+{% block content %}
+  {%for a in all%}:
+    <li>
+        <p>{{a.text}}</p>
+        <p>{{a.date_posted}}</p>
+    
+    </li>
+  {%empty%}
+    <li>Пусто</li>
+  {% endfor %}
+
+{% endblock content %}
